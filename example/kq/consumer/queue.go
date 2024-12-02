@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/zeromicro/go-queue/kq"
+	"github.com/chengfield/go-queue/kq"
 	"github.com/zeromicro/go-zero/core/conf"
 )
 

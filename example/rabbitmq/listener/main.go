@@ -4,8 +4,8 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/zeromicro/go-queue/example/rabbitmq/listener/config"
-	"github.com/zeromicro/go-queue/rabbitmq"
+	"github.com/chengfield/go-queue/example/rabbitmq/listener/config"
+	"github.com/chengfield/go-queue/rabbitmq"
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"
 )

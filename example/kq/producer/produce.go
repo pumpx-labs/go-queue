@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/zeromicro/go-queue/kq"
+	"github.com/chengfield/go-queue/kq"
 	"github.com/zeromicro/go-zero/core/cmdline"
 )
 

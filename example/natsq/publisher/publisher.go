@@ -5,8 +5,8 @@ import (
 	"math/rand"
 	"time"
 
+	"github.com/chengfield/go-queue/natsq"
 	"github.com/nats-io/nats.go/jetstream"
-	"github.com/zeromicro/go-queue/natsq"
 )
 
 func main() {
@@ -50,8 +50,8 @@ func main() {
 
 func randSub() string {
 	source := rand.NewSource(time.Now().UnixNano())
-    // 创建一个新的随机数生成器
-    rng := rand.New(source)
+	// 创建一个新的随机数生成器
+	rng := rand.New(source)
 	strings := []string{"ccc", "ddd", "eee"}
 	randomIndex := rng.Intn(len(strings))
 	return strings[randomIndex]

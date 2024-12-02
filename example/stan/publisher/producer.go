@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	"github.com/chengfield/go-queue/stanq"
 	"github.com/nats-io/stan.go"
-	"github.com/zeromicro/go-queue/stanq"
 	"math/rand"
 	"time"
 )
@@ -45,7 +45,7 @@ func main() {
 
 func randSub() string {
 	source := rand.NewSource(time.Now().UnixNano())
-    rng := rand.New(source)
+	rng := rand.New(source)
 	charSet := "abc"
 	length := 1
 	result := make([]byte, length)
