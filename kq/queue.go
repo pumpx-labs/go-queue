@@ -152,6 +152,10 @@ func newKafkaQueue(c KqConf, handler ConsumeHandler, options queueOptions) queue
 			RootCAs:            caCertPool,
 			InsecureSkipVerify: true,
 		}
+	} else {
+		readerConfig.Dialer.TLS = &tls.Config{
+			InsecureSkipVerify: true,
+		}
 	}
 	consumer := kafka.NewReader(readerConfig)
 
