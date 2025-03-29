@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/chengfield/go-queue/kq/internal"
+	"github.com/pumpx-labs/go-queue/kq/internal"
 	"github.com/segmentio/kafka-go"
 	"github.com/zeromicro/go-zero/core/executors"
 	"github.com/zeromicro/go-zero/core/logx"

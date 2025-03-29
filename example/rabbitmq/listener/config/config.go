@@ -1,6 +1,6 @@
 package config
 
-import "github.com/chengfield/go-queue/rabbitmq"
+import "github.com/pumpx-labs/go-queue/rabbitmq"
 
 type Config struct {
 	ListenerConf rabbitmq.RabbitListenerConf

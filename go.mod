@@ -1,4 +1,4 @@
-module github.com/chengfield/go-queue
+module github.com/pumpx-labs/go-queue
 
 go 1.21.0
 

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/chengfield/go-queue/rabbitmq"
+	"github.com/pumpx-labs/go-queue/rabbitmq"
 )
 
 func main() {

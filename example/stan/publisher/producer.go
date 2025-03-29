@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/chengfield/go-queue/stanq"
-	"github.com/nats-io/stan.go"
 	"math/rand"
 	"time"
+
+	"github.com/nats-io/stan.go"
+	"github.com/pumpx-labs/go-queue/stanq"
 )
 
 func main() {

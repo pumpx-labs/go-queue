@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/chengfield/go-queue/dq"
+	"github.com/pumpx-labs/go-queue/dq"
 	"github.com/zeromicro/go-zero/core/stores/redis"
 )
 

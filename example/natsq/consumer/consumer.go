@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/chengfield/go-queue/natsq"
+	"github.com/pumpx-labs/go-queue/natsq"
 )
 
 type MyConsumer struct {

@@ -5,8 +5,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/chengfield/go-queue/natsq"
 	"github.com/nats-io/nats.go/jetstream"
+	"github.com/pumpx-labs/go-queue/natsq"
 )
 
 func main() {

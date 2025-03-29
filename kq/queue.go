@@ -10,7 +10,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/chengfield/go-queue/kq/internal"
+	"github.com/pumpx-labs/go-queue/kq/internal"
 	"github.com/segmentio/kafka-go"
 	_ "github.com/segmentio/kafka-go/gzip"
 	_ "github.com/segmentio/kafka-go/lz4"
@@ -153,8 +153,10 @@ func newKafkaQueue(c KqConf, handler ConsumeHandler, options queueOptions) queue
 			InsecureSkipVerify: true,
 		}
 	} else {
-		readerConfig.Dialer.TLS = &tls.Config{
-			InsecureSkipVerify: true,
+		if readerConfig.Dialer != nil {
+			readerConfig.Dialer.TLS = &tls.Config{
+				InsecureSkipVerify: true,
+			}
 		}
 	}
 	consumer := kafka.NewReader(readerConfig)
