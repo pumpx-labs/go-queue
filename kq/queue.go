@@ -153,11 +153,11 @@ func newKafkaQueue(c KqConf, handler ConsumeHandler, options queueOptions) queue
 			InsecureSkipVerify: true,
 		}
 	} else {
-		if readerConfig.Dialer != nil {
-			readerConfig.Dialer.TLS = &tls.Config{
-				InsecureSkipVerify: true,
-			}
-		}
+		// if readerConfig.Dialer != nil {
+		// 	readerConfig.Dialer.TLS = &tls.Config{
+		// 		InsecureSkipVerify: true,
+		// 	}
+		// }
 	}
 	consumer := kafka.NewReader(readerConfig)
 
